@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="flex space-bw align-center">
+                <div class="logo">
+                    <a href="../index"><img src="../images/logo.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <ul class="flex">
+                        <li>
+                            <a href="../index">Home</a>
+                        </li>
+                        <li class="pos-relate">
+                            <a href="../course">Courses</a>
+                            <i class="fa-solid fa-chevron-down" id="coursesHov"></i>
+                            <ul class="coursesDrop">
+                                <li>
+                                    <a href="courses/animation-vfx-prime">Animation VFX Prime</a>
+                                </li>
+                                <li>
+                                    <a href="courses/graphic-and-web-development">Graphic and Web
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="courses/motion-graphic">Motion Graphic</a>
+                                </li>
+                                <li>
+                                    <a href="courses/trinity-3d-program">Trinity 3D Program</a>
+                                </li>
+                                <li>
+                                    <a href="courses/ui-ux">UI UX Design</a>
+                                </li>
+                                <li>
+                                    <a href="courses/vfx-compositing-and-editing">VFX Compositing and
+                                        Editing</a>
+                                </li>
+                                <li>
+                                    <a href="courses/vfx-film-making">VFX Film Making</a>
+                                </li>
+
+                                <li>
+                                    <a href="courses/vfx-prime">VFX Prime</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../admission">Admission</a>
+                        </li>
+                        <li>
+                            <a href="../blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat flex align-center">
+                    <p>Chat with us</p>
+                    <ul class="flex">
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-paper-plane"></i></a></li>
+                    </ul>
+                </div>
+                <div class="call-us">
+                    <p>+91-951-4123-412</p>
+                    <a href="">Call us and get sorted</a>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="admission-main-sec">
+        <div class="container">
+            <div class="flex align-center space-bw ">
+                <div class="hero-text col-50">
+                    <h1>Fill out the form <br> <span>and get Started</span></h1>
+                    <p>Are you ready to embark on a journey where imagination
+                        knows no bounds? Welcome to Arena
+                        Animation, your gateway to a world where creativity
+                        meets technology in the most spectacular
+                        way!</p>
+                    <div class="call-btn flex align-center">
+                        <a href>
+                            Fill admission form
+                            <div class="hoverEffect adm-hoverEffect">
+                                <div></div>
+                            </div>
+                        </a>
+                        <div class="play-btn">
+                            <img src="images/rotate.png" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image col-50">
+                    <img src="images/admission-right-50.gif" alt>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gap card-section-head">
+        <div class="container">
+            <div class="same-text text-center">
+                <h2><span>How we work</span> <br>it all</h2>
+            </div>
+            <div class="flex space-bw">
+                <div class="col-25">
+                    <div class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--city">
+                                            <div class="gif-3"><img src="images/gif-1.gif" alt=""></div>
+
+                                            <p class="card-front__text-price">
+                                                Assign Teacher
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--city">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="inside-page">
+                                            <div class="inside-page__container">
+                                                <h3 class="inside-page__heading inside-page__heading--city">
+                                                    For urban lovers
+                                                </h3>
+                                                <p class="inside-page__text">
+                                                    As cities never sleep, there are
+                                                    always something going on, no matter
+                                                    what time!
+                                                </p>
+                                                <a href="#" class="inside-page__btn">View
+                                                    deals</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--ski">
+                                            <div class="gif-3"><img src="images/gif-2.gif" alt=""></div>
+
+                                            <p class="card-front__text-price">
+                                                Email-Confirmation
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--ski">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="inside-page">
+                                            <div class="inside-page__container">
+                                                <h3 class="inside-page__heading inside-page__heading--ski">
+                                                    For snow lovers
+                                                </h3>
+                                                <p class="inside-page__text">
+                                                    Love snow? Why not take up exciting ski-in sessions and hit the
+                                                    slope?
+                                                </p>
+                                                <a href="#" class="inside-page__btn">View
+                                                    deals</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--beach">
+                                            <div class="gif-3"><img src="images/gif-3.gif" alt=""></div>
+
+
+                                            <p class="card-front__text-price">
+                                                Share Course Details
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--beach">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="inside-page">
+                                            <div class="inside-page__container">
+                                                <h3 class="inside-page__heading inside-page__heading--beach">
+                                                    For sun lovers
+                                                </h3>
+                                                <p class="inside-page__text">
+                                                    Relax and get sun-kissed tan in the sea or take up surfting for an
+                                                    adventure!
+                                                </p>
+                                                <a href="#" class="inside-page__btn">View
+                                                    deals</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--camping">
+                                            <div class="gif-3"><img src="images/gif-4.gif" alt=""></div>
+
+                                            <p class="card-front__text-price">
+                                                Interview Scheduled
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--camping">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="inside-page">
+                                            <div class="inside-page__container">
+                                                <h3 class="inside-page__heading inside-page__heading--camping">
+                                                    For nature lovers
+                                                </h3>
+                                                <p class="inside-page__text">
+                                                    Get your boots on for some hiking and explore all the beautiful
+                                                    scenery of
+                                                    nature!
+                                                </p>
+                                                <a href="#" class="inside-page__btn">View
+                                                    deals</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gap contact-section">
+        <div class="container">
+            <div class="same-text">
+                <h2><span>Join Us Now!</span></h2>
+                <p>Ready to take the plunge into the world of animation and
+                    multimedia? Contact us today to learn <br>
+                    more
+                    about our courses, admissions, and how Arena Animation
+                    can help you turn your dreams <br> into
+                    reality.
+                    Your creative journey starts here! </p>
+            </div>
+            <div class="flex align-center space-bw">
+                <div class="col-50">
+                    <div class="mb flex align-center">
+                        <div class="type_btn">
+                            <p><i class="fa-solid fa-phone"></i>Call Us</p>
+                        </div>
+                        <div>
+                            <p>+91-98454 52241, +91-85123 53244</p>
+                        </div>
+                    </div>
+                    <div class="mb flex align-center">
+                        <div class="type_btn">
+                            <p><i class="fa-solid fa-envelope"></i>Email Us</p>
+                        </div>
+                        <div>
+                            <p>arenaanimationsonipat@helpdesk.com</p>
+                        </div>
+                    </div>
+                    <div class="mb flex align-center">
+                        <div class="type_btn">
+                            <p><i class="fa-solid fa-location-dot"></i>Visit
+                                Us</p>
+                        </div>
+                        <div>
+                            <p>Super Plaza, 2nd Floor Near <br> Employment
+                                Office Gandhi Chowk <br> Sonipat 131001</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form col-50">
+                    <div class="form-top">
+                        <h4>contact our trained team</h4>
+                    </div>
+                    <form action>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone No.">
+                        </div>
+                        <div class="form-group">
+                            <textarea cols="30" rows="5" placeholder="Message" style="resize: none;"></textarea>
+                        </div>
+                        <div class="form-group submit-btn">
+                            <input type="submit" value="Send Information">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="gap container flex space-bw">
+            <div class="col-30 cols">
+                <img src="images/logo.png" alt>
+                <p>Arena Animation, your gateway to a world of creativity.</p>
+            </div>
+            <div class="col-40 cols useful-links text-center">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>
+                        <a href="index">Home</a>
+                    </li>
+                    <li>
+                        <a href="courses">Courses</a>
+                    </li>
+                    <li>
+                        <a href="admission">Admission</a>
+                    </li>
+                    <li>
+                        <a href="blog">Blog</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <ul>
+                        <li><a href>Privacy Policy</a></li>
+                        <li><a href>Terms of Service</a></li>
+                        <li><a href>Sitemap</a></li>
+                    </ul>
+                    <p>Copyright © 2023 SmartHome Innovations. All rights
+                        reserved.</p>
+                </div>
+            </div>
+            <div class="col-30 cols social-icons text-center">
+                <h3>Socials</h3>
+                <ul>
+                    <li>
+                        <a href>
+                            <i class=" fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>Contact us +91-98454 52241</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

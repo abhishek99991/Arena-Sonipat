@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WVS4WK3B');</script>
+
+</head>
+
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVS4WK3B" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <section class="parallax">
+        <header>
+            <div class="container">
+                <nav class="flex space-bw align-center">
+                    <div class="logo">
+                        <a href="/"><img src="../images/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul class="flex">
+                            <li>
+                                <a href="../index">Home</a>
+                            </li>
+                            <li class="pos-relate">
+                                <a href="../course">Courses</a>
+                                <i class="fa-solid fa-chevron-down" id="coursesHov"></i>
+                                <ul class="coursesDrop">
+                                    <li>
+                                        <a href="courses/advance-program-in-game-design">Advance Program in Game
+                                            Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/animation-prime">Animation Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/animation-vfx-prime">Animation VFX Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/animation-vfx-and-game-prime">Animation VFX and Game
+                                            Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/blender-3d-animation-prime">Blender 3D Animation Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/digital-ad-design-and-marketing">Digital Ad Design And
+                                            Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/gaming-ar-vr-prime">Gaming AR VR Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/graphic-and-web-development">Graphic and Web
+                                            Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/graphic-design-prime">Graphic Design Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/mobile-games-professional">Mobile Games Professional</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/motion-graphic">Motion Graphic</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/realtime-3d-cinematics">Realtime 3D Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/trinity-3d-program">Trinity 3D Program</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/ui-ux">UI UX Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/unreal-game-development">Unreal Game Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/vfx-compositing-and-editing">VFX Compositing and
+                                            Editing</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/vfx-film-making">VFX Film Making</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/vfx-prime">VFX Prime</a>
+                                    </li>
+                                    <li>
+                                        <a href="courses/video-games-professional">Video Games Professional</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../admission">Admission</a>
+                            </li>
+                            <li>
+                                <a href="../blog">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat flex align-center">
+                        <p>Chat with us</p>
+                        <ul class="flex">
+                            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-paper-plane"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="call-us">
+                        <a href="tel:+919996991779">+91-9996991779</a>
+                        <p>Call us and get sorted</p>
+                    </div>
+                    <div class="toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="hero-section flex align-center space-bw">
+            <div class="hero-text col-50">
+                <div class="redBackText">
+                    <h4>Arena Animation Sonipat</h4>
+                </div>
+                <h1>Where Creativity <br> <span>Meets Technology</span></h1>
+                <p>Ready to give your imagination shape with cutting-edge technologies. Arena Animation Sonipat is
+                    a
+                    vibrant convergence of imagination and innovation, where your ideas come to reality via the synergy
+                    of technological prowess and artistic expression. </p>
+                <div class="call-btn flex align-center">
+                    <a href="">
+                        Get in touch
+                        <div class="hoverEffect">
+                            <div></div>
+                        </div>
+                    </a>
+                    <div class="play-btn">
+                        <img src="images/rotate.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero-image col-50">
+                <img src="images/hero-image.png" alt="">
+            </div> -->
+        </section>
+    </section>
+
+    <section class="choose-us gap parallax">
+        <div class="container">
+            <div class="same-text">
+                <h2>Why Choose <br><span>Arena Animation Sonipat</span></h2>
+            </div>
+            <div class="choose-main flex space-bw">
+                <div class="common-choose col-40 industry">
+                    <div class="common-text">
+                        <h4>Courses in Arena Animation</h4>
+                        <p>Empower your career with our cutting-edge technical courses. Arena Animation graphic design
+                            course, Arena Animation VFX course, Arena Animation UI/UX course, and Arena Animation web
+                            design course are a few examples of our curriculum. </p>
+                    </div>
+                </div>
+                <div class="common-choose col-40 faculty">
+                    <div class="common-text">
+                        <h4>Professional Assistance</h4>
+                        <p>Arena Animation Sonipat has some of the best industry veterans with years of expertise. Our
+                            experts bring you insights and real-world knowledge that help you excel in your selected
+                            field.</p>
+                    </div>
+                </div>
+                <div class="common-choose col-20">
+                    <div class="common-text">
+                        <h4>State of the Art Infrastructure</h4>
+                        <img src="images/state.png" alt="">
+                    </div>
+                </div>
+                <div class="common-choose col-60 placement">
+                    <div class="common-text">
+                        <h4>Top-NotchPlacements</h4>
+                        <p>Navigate your path confidently with stellar placement with Arena Institute, connecting you
+                            with opportunities that match your skill and excelliance.</p>
+                    </div>
+                </div>
+                <div class="common-choose col-40 network">
+                    <div class="common-text">
+                        <h4>Worldwide Collaboration</h4>
+                        <p>Join Arena Institute to become a part of a massive network of global achievers, mentorship,
+                            fostering connections, and endless possibilities of lifelong success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gap courses-we-offer parallax">
+        <div class="container">
+            <div class="same-text">
+                <h2>Course We Offer at <br><span>Arena Animation</span></h2>
+            </div>
+            <div class="flex space-bw">
+                <div class="courses-video col-50">
+                    <a href="courses/animation-vfx-prime" target="_blank">
+                        <video src="images/gaming.mp4" loop autoplay></video>
+                        <div class="video-text flex space-bw align-center">
+                            <h3>Animation Vfx Prime</h3>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses-video col-50">
+                    <a href="courses/trinity-3d-program" target="_blank">
+                        <video src="images/3D.mp4" loop autoplay></video>
+                        <div class="video-text flex space-bw align-center">
+                            <h3>Trinity 3D Program</h3>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses-video col-50">
+                    <a href="courses/vfx-prime" target="_blank">
+                        <video src="images/Animation.mp4" loop autoplay></video>
+                        <div class="video-text flex space-bw align-center">
+                            <h3>VFX Prime</h3>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses-video col-50">
+                    <a href="courses/vfx-film-making" target="_blank">
+                        <video src="images/advertisement.mp4" loop autoplay></video>
+                        <div class="video-text flex space-bw align-center">
+                            <h3>VFX Film Making</h3>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="course">Show More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gap choose-us parallax2">
+        <div class="container">
+            <div class="same-text">
+                <h2>Our Students and <br> <span>their Stories!</span></h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="slides">
+                    <div class="flex space-bw">
+                        <div class="col-90">
+                            <span></span>
+                            <span></span>
+                            <p>While looking for excellent VFX and UI/UX resources, I came across Arena Animation, and I
+                                am so impressed! The homepage of the website is an excellent source of data, skillfully
+                                fusing eye-catching design samples with insightful information about the most recent
+                                trends. It's now my go-to resource for keeping up with the fast-paced design industry..
+                            </p>
+                            <div class="text-right">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <img src="images/person.png" alt="">
+                            <p>Kajal Sharma</p>
+                        </div>
+                    </div>
+                    <div class="flex space-bw">
+                        <div class="col-10">
+                            <img src="images/person2.png" alt="">
+                            <p>Vipul Kumar</p>
+                        </div>
+                        <div class="col-90">
+                            <p>The homepage of Arena Animation is an eye-catching delight! The content on graphic
+                                design, VFX film making and web development has been carefully selected and offers both
+                                inspirational and educational value. The UI is intuitive, making navigation a breeze.
+                                Whether you are an aspiring designer or a seasoned professional, this website is a
+                                goldmine of resources that will spark your creativity.</p>
+                            <div class="text-right">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="flex space-bw">
+                        <div class="col-90">
+                            <span></span>
+                            <span></span>
+                            <p>For me as a design student, Arena Animation has changed the game. The website serves as
+                                more than just a gateway to a world of knowledge and skill development. My decision to
+                                enroll was influenced by the variety of design courses offered and the real-world
+                                application showcased on the homepage. Bravo for setting the standard so high in the
+                                field of design education with Arena Animation!</p>
+                            <div class="text-right">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <img src="images/person.png" alt="">
+                            <p>Kajal Sharma</p>
+                        </div>
+                    </div>
+                    <div class="flex space-bw">
+                        <div class="col-10">
+                            <img src="images/person2.png" alt="">
+                            <p>Vipul Kumar</p>
+                        </div>
+                        <div class="col-90">
+                            <p>The website of Arena Animation functions as a living gallery of creative design. A
+                                tribute to the most recent trends in the industry, the VFX compositing and editing
+                                showcase is truly remarkable, and the UI UX design section is no exception. I like how
+                                the website is updated frequently with new and innovative design inspiration, keeping us
+                                interested.</p>
+                            <div class="text-right">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="flex space-bw">
+                        <div class="col-90">
+                            <span></span>
+                            <span></span>
+                            <p>Arena Animation is a community for design enthusiasts, not just a website. The home page
+                                not only showcases incredible design work but also cultivates a feeling of community.
+                                Discussion boards, live webinars, and cooperative projects create an engaging
+                                environment for networking and learning. Arena Animation has successfully achieved the
+                                ideal balance between creativity and community. </p>
+                            <div class="text-right">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <img src="images/person.png" alt="">
+                            <p>Kajal Sharma</p>
+                        </div>
+                    </div>
+                    <div class="flex space-bw">
+                        <div class="col-10">
+                            <img src="images/person2.png" alt="">
+                            <p>Vipul Kumar</p>
+                        </div>
+                        <div class="col-90">
+                            <p>Enrolling in Arena Animation was one of the best decisions I ever made. The
+                                Graphic
+                                Design course exceeded my expectations, and the support from both instructors
+                                and fellow
+                                students was incredible. I honed my skills, created a portfolio I'm proud of,
+                                and even
+                                got the chance to work on real projects.</p>
+                            <div class="text-right">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gap contact-section parallax">
+        <div class="container">
+            <div class="same-text">
+                <h2>Your Creative Journey <br> <span>Starts Here</span></h2>
+                <p>Ready to take the plunge into the world of animation and multimedia? Contact us today to
+                    learn <br>
+                    more
+                    about our courses, admissions, and how Arena Animation can help you turn your dreams <br>
+                    into
+                    reality.
+                    Your creative journey starts here! </p>
+            </div>
+            <div class="flex align-center space-bw">
+                <div class="col-50">
+                    <div class="mb flex align-center">
+                        <div class="type_btn">
+                            <p><i class="fa-solid fa-phone"></i>Call Us</p>
+                        </div>
+                        <div>
+                            <p>+91-9996991779, +91-9996991780</p>
+                        </div>
+                    </div>
+                    <div class="mb flex align-center">
+                        <div class="type_btn">
+                            <p><i class="fa-solid fa-envelope"></i>Email Us</p>
+                        </div>
+                        <div>
+                            <p>arenasonipat@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb flex align-center">
+                        <div class="type_btn">
+                            <p><i class="fa-solid fa-location-dot"></i>Visit Us</p>
+                        </div>
+                        <div>
+                            <p>Super Plaza, 2nd Floor Near <br> Employment Office Gandhi Chowk <br> Sonipat
+                                131001</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form col-50">
+                    <div class="form-top">
+                        <h4>contact our trained team</h4>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone No.">
+                        </div>
+                        <div class="form-group">
+                            <textarea cols="30" rows="5" placeholder="Message" style="resize: none;"></textarea>
+                        </div>
+                        <div class="form-group submit-btn">
+                            <input type="submit" value="Send Information">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gap">
+        <div class="container">
+            <div class="same-text">
+                <h2><span>Our Partners</span></h2>
+            </div>
+            <div class="partners-slider">
+                <div class="inner-slide">
+                    <img src="images/p1.png" alt="">
+                </div>
+                <div class="inner-slide">
+                    <img src="images/p2.png" alt="">
+                </div>
+                <div class="inner-slide">
+                    <img src="images/p3.png" alt="">
+                </div>
+                <div class="inner-slide">
+                    <img src="images/p4.png" alt="">
+                </div>
+                <div class="inner-slide">
+                    <img src="images/p5.png" alt="">
+                </div>
+                <div class="inner-slide">
+                    <img src="images/p6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="gap container flex space-bw">
+            <div class="col-30 cols">
+                <img src="images/logo.png" alt>
+                <p>Arena Animation, your gateway to a world of creativity.</p>
+            </div>
+            <div class="col-40 cols useful-links text-center">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>
+                        <a href="index">Home</a>
+                    </li>
+                    <li>
+                        <a href="course">Home</a>
+                    </li>
+                    <li>
+                        <a href="admission">Admission</a>
+                    </li>
+                    <li>
+                        <a href="blog">Blog</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <ul>
+                        <li><a href>Privacy Policy</a></li>
+                        <li><a href>Terms of Service</a></li>
+                        <li><a href>Sitemap</a></li>
+                    </ul>
+                    <p>Copyright © 2024 Arena Animation Sonipat. All rights
+                        reserved.</p>
+                </div>
+            </div>
+            <div class="col-30 cols social-icons text-center">
+                <h3>Socials</h3>
+                <ul>
+                    <li>
+                        <a href>
+                            <i class=" fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/arena_animation_sonipat/">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a class="tel-num" href="tel:+919996991779">Contact Us +91-9996991779</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
